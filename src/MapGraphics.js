@@ -25,6 +25,7 @@ const MapGraphics = ({ view }) => {
       longitude: Faker.address.longitude(),
     });
   }
+
   useEffect(() => {
     const glResult1 = view.map.findLayerById("glResult1");
 
