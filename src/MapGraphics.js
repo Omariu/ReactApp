@@ -12,14 +12,13 @@ const MapGraphics = ({ view }) => {
   Faker.locale = "ar";
 
   let loactions = [];
-  for (let index = 0; index < 10; index++) {
+  for (let index = 0; index < 10; index++)
     loactions.push({
       name: Faker.name.findName(),
       address: Faker.address.streetAddress(),
       latitude: Faker.address.latitude(),
       longitude: Faker.address.longitude(),
     });
-  }
 
   useEffect(() => {
     const glResult1 = view.map.findLayerById("glResult1");
